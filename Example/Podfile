@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HSLKit_Example' do
+  pod 'HSLKit', :path => '../'
+
+  target 'HSLKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
