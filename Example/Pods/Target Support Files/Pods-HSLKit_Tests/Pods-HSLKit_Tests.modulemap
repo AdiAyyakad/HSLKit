@@ -1,0 +1,6 @@
+framework module Pods_HSLKit_Tests {
+  umbrella header "Pods-HSLKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
