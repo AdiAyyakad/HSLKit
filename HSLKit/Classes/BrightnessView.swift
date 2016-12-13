@@ -121,6 +121,10 @@ class PointerView: UIView {
         center = toPoint
     }
 
+    func changeSize(to size: CGFloat) {
+        frame.size = CGSize(width: size, height: size)
+    }
+
     // MARK: - UIBezierPath
 
     fileprivate func createPointer() -> UIBezierPath {

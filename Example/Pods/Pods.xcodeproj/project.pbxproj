@@ -112,10 +112,10 @@
 		36FD92D2C0F2CA6A8B765867633A080D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0FD5D5D4EDB2836A8199FA69ECE19496 /* BrightnessView.swift */,
 				BA5BA2A180A6217F637FF51E9FCA3FE7 /* HSBColorPickerView.swift */,
 				1652A2F28D87BC0AA82183B25A33BCAB /* HSBView.swift */,
 				A9BC1D845AF613F661101CFA5510C908 /* HSColorView.swift */,
+				0FD5D5D4EDB2836A8199FA69ECE19496 /* BrightnessView.swift */,
 				D49D4C97EF5B9540A8368274CBA98307 /* Utility.swift */,
 			);
 			path = Classes;

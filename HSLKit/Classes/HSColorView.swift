@@ -138,6 +138,10 @@ class CrosshairView: UIView {
         center = point
     }
 
+    func changeSize(to size: CGFloat) {
+        frame.size = CGSize(width: size, height: size)
+    }
+
     // MARK: - UIBezierPath Creator
 
     private func createCrosshairs() -> UIBezierPath {
