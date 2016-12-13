@@ -13,9 +13,7 @@ class BrightnessView: HSBView {
 
     var gradientWidth: Int { return Int(bounds.width / 2) }
     var padding: CGFloat { return superHSBColorPickerView.padding }
-    let pointerView = PointerView(frame: CGRect(origin: .zero,
-                                                size: CGSize(width: PointerView.size,
-                                                             height: PointerView.size)))
+    let pointerView = PointerView()
 
     override func setup() {
         super.setup()
@@ -80,6 +78,12 @@ class PointerView: UIView {
     open static let size: CGFloat = 6.0
 
     // MARK: - Inits
+
+    convenience init() {
+        self.init(frame: CGRect(origin: .zero,
+                                size: CGSize(width: PointerView.size,
+                                height: PointerView.size)))
+    }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

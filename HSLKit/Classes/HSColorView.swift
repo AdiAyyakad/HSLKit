@@ -11,8 +11,7 @@ import UIKit
 @IBDesignable
 class HSColorView: HSBView {
 
-    let crosshairView = CrosshairView(frame: CGRect(origin: .zero, size: CGSize(width: CrosshairView.size,
-                                                                                height: CrosshairView.size)))
+    let crosshairView = CrosshairView()
 
     override func setup() {
         super.setup()
@@ -102,6 +101,11 @@ class CrosshairView: UIView {
     public static let size: CGFloat = 10.0
 
     // MARK: - Inits
+
+    convenience init() {
+        self.init(frame: CGRect(origin: .zero, size: CGSize(width: CrosshairView.size,
+                                                            height: CrosshairView.size)))
+    }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
