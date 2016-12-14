@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable
+// @IBDesignable
 class HSBColorPickerView: UIView {
 
     @IBInspectable internal var color: UIColor = .purple {

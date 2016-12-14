@@ -97,7 +97,7 @@ internal extension HSBView {
 extension HSBView {
 
     func recognize(_ gesture: UIGestureRecognizer) {
-        fatalError("Not overridden")
+        DLog("Recognized")
     }
 
 }

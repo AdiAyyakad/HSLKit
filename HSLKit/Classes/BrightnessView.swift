@@ -52,12 +52,13 @@ extension BrightnessView {
 extension BrightnessView {
 
     override func draw(_ rect: CGRect) {
+        DLog("Drawing Brightness")
         drawGradient()
     }
 
-    fileprivate func drawGradient() {
+    private func drawGradient() {
         guard let context = UIGraphicsGetCurrentContext() else {
-            NSLog("Could not get current context")
+            DLog("Could not get current context")
             return
         }
 
@@ -75,7 +76,7 @@ extension BrightnessView {
 }
 
 class PointerView: UIView {
-    open static let size: CGFloat = 6.0
+    public static let size: CGFloat = 6.0
 
     // MARK: - Inits
 
@@ -108,7 +109,6 @@ class PointerView: UIView {
         pointerLayer.lineWidth = 2.0
 
         layer.addSublayer(pointerLayer)
-
     }
 
     // MARK: - Action
@@ -121,13 +121,9 @@ class PointerView: UIView {
         center = toPoint
     }
 
-    func changeSize(to size: CGFloat) {
-        frame.size = CGSize(width: size, height: size)
-    }
-
     // MARK: - UIBezierPath
 
-    fileprivate func createPointer() -> UIBezierPath {
+    private func createPointer() -> UIBezierPath {
         let pointer = UIBezierPath()
 
         let topLeftBox = CGPoint(x: center.x + PointerView.size, y: center.y + PointerView.size)
